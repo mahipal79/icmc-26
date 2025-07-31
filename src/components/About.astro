@@ -1,0 +1,127 @@
+---
+import Container from "./ui/Container.astro";
+---
+
+<style>
+  .scroll-container {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: auto;
+    padding-bottom: 1rem;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    min-width: 280px;
+    flex-shrink: 0;
+    background-color: white;
+    border: 2px solid #077A7D;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .info-block {
+    width: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .info-block {
+      width: 50%;
+    }
+  }
+</style>
+
+<script type="text/javascript" is:inline>
+  let scrollContainer;
+  function startInfiniteScroll() {
+    let scrollSpeed = 0.5;
+    function animate() {
+      if (!scrollContainer) return;
+      scrollContainer.scrollLeft += scrollSpeed;
+      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
+        scrollContainer.scrollLeft = 0;
+      }
+      requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate);
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    scrollContainer = document.querySelector(".scroll-container");
+    if (scrollContainer) {
+      scrollContainer.innerHTML += scrollContainer.innerHTML;
+      startInfiniteScroll();
+    }
+  });
+</script>
+
+<div id="about" class="py-10 bg-white scroll-mt-10">
+  <Container>
+    <!-- About the Conference -->
+    <h2 class="text-center text-2xl font-bold md:text-4xl mb-8 text-[#06202B]">
+      About the Conference
+    </h2>
+
+    <div class="mb-8">
+      <p class="w-full text-justify text-[#077A7D] text-base md:text-lg leading-relaxed">
+        The <strong>2nd International Conference on Intelligent Computing for Multidisciplinary Challenges (ICMC-2026)</strong> at GSFC University, brings together leading researchers, academicians, and industry professionals to advance the field of intelligent computing. The conference focuses on innovative computational methods, intelligent systems, and data-driven solutions to address complex problems across diverse disciplines.
+        <br /><br />
+        ICMC-2026 will provide a vibrant platform for sharing breakthroughs, engaging in insightful discussions, and shaping the future of intelligent systems across sectors such as healthcare, environmental sustainability, predictive analytics, and decision support. <br /><br />
+        The proceedings of the conference will be submitted for publication in the <strong>Communications in Computer and Information Science (CCIS)</strong> series of <strong>Springer</strong> [SCOPUS Indexed].
+      </p>
+    </div>
+
+    <!-- WHEN & WHERE (Minimal Version) -->
+    
+    <div class="flex flex-col md:flex-row gap-8 mb-16 text-[#077A7D ]">
+
+    <div class="info-block">
+        <h3 class="text-xl font-bold text-black mb-2">WHERE</h3>
+        <p class="text-base">
+        The Conference will be hosted in Offline Mode
+<br>(Online presentations will be permitted exclusively for foreign authors and a limited number of Indian authors who submit a genuine request).
+          <br />
+          <strong>GSFC University, Vadodara, Gujarat, India</strong>
+        </p>
+      </div>
+      <div class="info-block">
+        <h3 class="text-xl font-bold text-black mb-2">WHEN</h3>
+        <p class="text-base">
+          Wednesday – Thursday<br />
+          <strong>February 19–20, 2026</strong>
+        </p>
+      </div>
+      
+    </div>
+
+    <!-- About GSFC University -->
+    <h2 class="text-center text-2xl font-bold md:text-4xl mb-8 text-[#06202B]">About GSFC University</h2>
+    <div class="flex flex-col md:flex-row gap-8 mb-8">
+      <p class="w-full md:w-3/5 text-justify text-[#077A7D] text-base md:text-lg leading-relaxed">
+        GSFC University, recognized under the Gujarat Private University Act 2014, is backed by the
+        legacy of Gujarat State Fertilizers and Chemicals Ltd. The university nurtures knowledge with
+        strong industrial collaboration, hands-on training, and a commitment to sustainable innovation.
+        Rooted in the philosophy of "Buddhi Gyanen Shudhayanti", it fosters holistic growth through
+        intellect and compassion.
+      </p>
+      <iframe
+        class="w-full md:w-2/5 aspect-video rounded-lg"
+        src="https://www.youtube.com/embed/00RpFOKLdpk?si=0o4fHrbRqu7Tiof6"
+        title="GSFC University Intro"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </Container>
+</div>

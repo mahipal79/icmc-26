@@ -1,0 +1,93 @@
+---
+import Container from "./ui/Container.astro";
+import Link from "./ui/Link.astro";
+---
+
+  <section id="registration" class="text-center space-y-10 relative scroll-mt-24 ">
+    <Container>
+       <div
+      aria-hidden="true"
+      class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -z-50 -space-x-52 opacity-20"
+    >
+      <div class="blur-[106px] h-56 bg-gradient-to-br from-[#077A7D] to-purple-400"></div>
+      <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300"></div>
+    </div>
+
+    <h1 class="text-2xl font-bold text-[#06202B] md:text-4xl mb-6">
+      Registration & Publication Fees
+    </h1>
+
+    <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+      <table class="table-auto rounded-lg overflow-hidden text-[#06202B]">
+        <thead>
+          <tr>
+            <th class="px-4 py-2 bg-[#077A7D] text-[#E7F7F7]">Categories</th>
+            <th class="px-4 py-2 bg-[#077A7D] text-[#E7F7F7]">Fees*</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border px-4 py-2">
+              Students/Research Scholars/ Academicians
+            </td>
+            <td class="border px-4 py-2">INR 7,000</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">Industry Delegates</td>
+            <td class="border px-4 py-2">INR 10,000</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">
+              Authors, outside India (by Affiliation)
+            </td>
+            <td class="border px-4 py-2">USD 250</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">Attendee / Co-author</td>
+            <td class="border px-4 py-2">INR 1,000</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">
+              Attendee / Co-author, outside India (by Affiliation)
+            </td>
+            <td class="border px-4 py-2">USD 150</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2 text-center" colspan="2">
+              *All the above fees are inclusive of 18% GST
+            </td>
+          </tr>
+          
+          
+        </tbody>
+        
+      </table>
+      
+
+      <!-- Optional QR Code Section
+      <div class="flex flex-col items-center justify-center space-y-10">
+        <a href="https://www.gsfcuni.edu.in/" target="_blank">
+          <img src="/images/QRCode.png" alt="QR Code" class="w-56 rounded-lg" />
+          <p class="text-center text-sm text-[#06202B]">
+            Scan the QR code for registration
+          </p>
+        </a>
+      </div>
+      -->
+    </div>
+<br>
+*Bank transaction charges will be borne by the authors and are not included in the registration fee. <br> 
+  While making the payment, please mention your Paper ID in the purpose or remarks section.
+    <!-- Optional Registration Link Section
+    <h1 class="text-4xl font-bold text-[#06202B] md:text-5xl">
+      Attendee Registration Link
+    </h1>
+    <div class="text-center text-md md:text-lg text-[#06202B]">
+      <Link href="https://forms.gle/DdY3taCH33thQveFA" class="text-[#077A7D]">
+        https://forms.gle/DdY3taCH33thQveFA
+      </Link>
+    </div>
+    -->
+    </Container>
+  </section>
+

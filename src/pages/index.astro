@@ -1,0 +1,32 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import About from '@/components/About.astro';
+
+import HeroSection from '@/components/HeroSection.astro';
+import ImportantDates from '@/components/ImportantDates.astro';
+import Publication from '@/components/Publication.astro';
+import Registration from '@/components/Registration.astro';
+import Speakers from '@/components/Speakers.astro';
+import Topics from '@/components/Topics.astro';
+import Venue from '@/components/Venue.astro';
+import AuthorsGuidelines from '@/components/AuthorsGuidelines.astro';
+import CallForReviewers from '@/components/CallForReviewers.astro';
+import Proceedings from '@/components/Proceedings.astro';
+---
+
+<Layout title="GSFCU - ICON-AI-SMT'26">
+  <main class="space-y-24">
+    <HeroSection />
+    <About />
+    <Speakers />
+   
+    <Topics />
+    <AuthorsGuidelines />
+    <Publication />
+    <ImportantDates />
+    <Registration />
+    <CallForReviewers />
+    <Venue />
+    <Proceedings />
+  </main>
+</Layout>

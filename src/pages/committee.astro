@@ -1,0 +1,19 @@
+---
+import CommitteeSection from '@/components/CommitteeSection';
+import AppHeader from '@/components/AppHeader.astro';
+
+---
+
+<html lang="en">
+  <head>
+    <title>Committee | ICON-AI-SMT'26</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="bg-white text-[#06202B] font-sans">
+    <AppHeader />
+    <main class="pt-16 pb-24">
+      <CommitteeSection client:load />
+    </main>
+  </body>
+</html>

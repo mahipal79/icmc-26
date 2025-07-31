@@ -1,0 +1,86 @@
+---
+import Container from "./ui/Container.astro";
+
+const TRACK_ONE = [
+  "Deep Learning Architectures (CNN, RNN, Transformers)",
+  "Reinforcement Learning and Decision-Making Systems",
+  "Explainable AI and Model Interpretability",
+  "AI for Predictive Analytics and Forecasting",
+  "Generative AI (GANs, Diffusion Models)",
+  "AI in Real-Time and Embedded Systems",
+  "Transfer Learning and Few-Shot Learning",
+  "Federated and Privacy-Preserving Machine Learning",
+  "Applications of AI and ML Techniques",
+];
+
+const TRACK_TWO = [
+  "AI for Medical Imaging and Disease Diagnosis",
+  "Predictive Modeling for Public Health and Epidemics",
+  "IoT and Sensor-Based Health Monitoring Systems",
+  "Smart Environmental Monitoring (Air, Water, Soil)",
+  "Machine Learning for Climate Change and Weather Prediction",
+  "Remote Sensing and Image Analysis for Agriculture",
+  "AI in Waste Management and Sustainable Practices",
+  "Edge and Cloud Computing in Smart Healthcare Systems",
+  "AI in Biomedical Image Processing and Mental Healthcare",
+];
+---
+
+<section id="topics" class="text-center space-y-4 scroll-mt-24">
+  <Container>
+    <h1 class="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+      Call For Papers
+    </h1>
+
+    <p class="my-8 text-[#06202b]">
+      We invite researchers and professionals to contribute their original work
+      that advances the field of AI and intelligent systems. This year's
+      conference will focus on cutting-edge developments in Artificial
+      Intelligence, Machine Learning applications, and intelligent systems for
+      healthcare and environmental sustainability. The topics covered (but are not limited to) in the conference are enlisted below.
+    </p>
+
+    <div class="grid grid-cols-1 gap-8 my-16 md:grid-cols-2">
+  <div>
+    <div class="flex justify-center mb-2">
+      <span class="inline-block bg-[#2563eb] text-white text-sm sm:text-base font-semibold px-6 py-2 rounded-full shadow-md tracking-wider">
+        TRACK 1
+      </span>
+    </div>
+    <h3 class="text-2xl font-bold text-[#2563eb] text-center">
+      Artificial Intelligence, Machine Learning and Applications
+    </h3>
+    <ul class="divide-y divide-gray-200 dark:divide-gray-700 text-center mt-4">
+      {
+        TRACK_ONE.map((topic) => (
+          <li class="py-2 sm:py-3">
+            <div class="flex items-center justify-center space-x-4">{topic}</div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <div>
+    <div class="flex justify-center mb-2">
+      <span class="inline-block bg-[#65a30d] text-white text-sm sm:text-base font-semibold px-6 py-2 rounded-full shadow-md tracking-wider">
+        TRACK 2
+      </span>
+    </div>
+    <h3 class="text-2xl font-bold text-[#65a30d] text-center">
+      Intelligent Systems for Healthcare and Environmental Sustainability
+    </h3>
+    <ul class="divide-y divide-gray-200 dark:divide-gray-700 text-center mt-4">
+      {
+        TRACK_TWO.map((topic) => (
+          <li class="py-2 sm:py-3">
+            <div class="flex items-center justify-center space-x-4">{topic}</div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
+
+  </Container>
+</section>

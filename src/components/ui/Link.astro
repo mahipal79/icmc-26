@@ -1,0 +1,13 @@
+---
+const href = Astro.props.href;
+---
+
+<a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="italic inline-block hover:opacity-80"
+    style="color: #077A7D;"
+>
+    <slot />
+</a>
