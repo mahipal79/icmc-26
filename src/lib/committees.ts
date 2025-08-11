@@ -33,7 +33,7 @@ export const ADVISORY_COMMITTEE: Array<Member> = [
     },
     {
         name: "Mr. Vineet Tripathi",
-        position: "TCS"
+        position: "TCS,Bangalore"
     },
     {
         name: "Mr. Saurabh Tiwari",
@@ -240,16 +240,20 @@ export const EDITORIAL_TEAM: Array<Member> = [
 ];
 
 export const WEB_COMMITTEE: Array<Member> = [
+     {
+        name: "Mr. Saurabh Solanki",
+        position: "Senior Manager IT",
+    },
     {
         name: "Mr. Vishal Harith",
         position: "GSFC University, Vadodara, India",
     },
     {
         name: "Ms. Krishna Viradiya",
-        position: "GSFC University, Vadodara, India",
+        position: "Student CSE, GSFC University, Vadodara",
     },
     {
         name: "Mr. Mahipal Chauhan",
-        position: "GSFC University, Vadodara, India",
+        position: "Student CSE, GSFC University, Vadodara",
     },
 ];

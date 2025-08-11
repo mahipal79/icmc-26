@@ -2,48 +2,85 @@
 import Container from "./ui/Container.astro";
 ---
 
-<section id="proceedings" >
+<section id="proceedings">
   <Container>
-    <!-- Title -->
     <h1 class="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl mb-4">
       Past Conference
     </h1>
 
-    <!-- Springer Link -->
-    <!--<p class="text-center text-sky-500 italic text-lg mb-8">
-     https://icon-ai-smt.gsfcuni.edu.in/
-    </p> -->
-<div class="text-center mb-10">
-  <a
-    href="https://icon-ai-smt.gsfcuni.edu.in/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="text-sky-500 italic text-lg"
-  >
-    https://icon-ai-smt.gsfcuni.edu.in/
-  </a>
-</div>
+    <div class="text-center mb-10">
+      <a
+        href="https://icon-ai-smt.gsfcuni.edu.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-sky-500 italic text-lg"
+      >
+        https://icon-ai-smt.gsfcuni.edu.in/
+      </a>
+    </div>
 
-    <!-- Conference Info Section -->
-    <div class="flex flex-col md:flex-row justify-center items-start gap-10">
-      <!-- Book Cover -->
-      <div class="w-full md:w-1/3 flex justify-center">
+    <!-- Equal height layout -->
+    <div class="flex flex-col md:flex-row gap-10 items-start">
+      <!-- Image -->
+      <div class="w-full md:w-1/2 flex justify-center items-start">
         <img
-          src="/conference-book-cover.png"
-          alt="AI SMT'25 Proceedings Cover"
-          class="max-w-xs rounded-lg shadow-md"
+          id="slider-image"
+          src="/images/past/IMG_6735.JPG"
+          alt="Past Conference Image"
+          class="rounded-lg shadow-md object-contain"
         />
       </div>
 
-      <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-        <strong>Communications in Computer and Information Science (CCIS)</strong> – Volume [To be assigned]<br/>
-        <strong>Interdisciplinary Horizons: Integrating AI in Science, Management, and Technology</strong><br/>
-          First International Conference, ICON-AI-SMT'25, Vadodara, India, February 20–21, 2025<br/>
-        <strong>Proceedings Editors</strong><br> Prof. G. R Sinha, Prof. Varun Bajaj, Dr. Silvia Liberata Ullo, Prof. Humaira Nisar, Prof. C P Fan<br/>
-        [Publisher link – to be updated]
-</p>
+      <!-- Text -->
+      <div class="w-full md:w-1/2 text-left" id="text-container">
+        <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+          <strong>Communications in Computer and Information Science (CCIS)</strong> – Volume [To be assigned]<br />
+          <strong>Interdisciplinary Horizons: Integrating AI in Science, Management, and Technology</strong><br />
+          First International Conference, ICON-AI-SMT'25, Vadodara, India, February 20–21, 2025<br />
+          <strong>Proceedings Editors</strong><br />
+          Prof. G. R Sinha, Prof. Varun Bajaj, Dr. Silvia Liberata Ullo, Prof. Humaira Nisar, Prof. C P Fan<br />
+          [Publisher link – to be updated]
+        </p>
       </div>
     </div>
-
   </Container>
 </section>
+
+<script>
+  const sliderImage = document.getElementById("slider-image");
+  const textContainer = document.getElementById("text-container");
+
+  function adjustImageSize() {
+    if (sliderImage && textContainer) {
+      sliderImage.style.maxHeight = textContainer.offsetHeight + "px";
+      sliderImage.style.width = "auto"; // Keep original ratio
+    }
+  }
+
+  window.addEventListener("load", adjustImageSize);
+  window.addEventListener("resize", adjustImageSize);
+
+  const images = [
+    "/images/past/IMG_6735.JPG",
+    "/images/past/IMG_6765.JPG",
+    "/images/past/IMG_6876.JPG",
+    "/images/past/IMG_6905.JPG",
+    "/images/past/IMG_7013.JPG",
+    "/images/past/IMG_7033.JPG",
+    "/images/past/IMG_7154.JPG",
+    "/images/past/IMG_7237.JPG",
+    "/images/past/IMG_7357.JPG",
+    "/images/past/IMG_7386.JPG"
+  ];
+
+  let currentIndex = 0;
+
+  if (sliderImage) {
+    function changeImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      sliderImage.src = images[currentIndex];
+      adjustImageSize(); // Recalculate after image change
+    }
+    setInterval(changeImage, 3000);
+  }
+</script>

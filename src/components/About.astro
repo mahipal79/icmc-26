@@ -89,7 +89,7 @@ import Container from "./ui/Container.astro";
     <div class="info-block">
         <h3 class="text-xl font-bold text-black mb-2">WHERE</h3>
         <p class="text-base">
-        The Conference will be hosted in Offline Mode
+        The conference will be hosted in offline mode
 <br>(Online presentations will be permitted exclusively for foreign authors and a limited number of Indian authors who submit a genuine request).
           <br />
           <strong>GSFC University, Vadodara, Gujarat, India</strong>
@@ -98,7 +98,7 @@ import Container from "./ui/Container.astro";
       <div class="info-block">
         <h3 class="text-xl font-bold text-black mb-2">WHEN</h3>
         <p class="text-base">
-          Wednesday – Thursday<br />
+          Thursday – Friday<br />
           <strong>February 19–20, 2026</strong>
         </p>
       </div>
@@ -106,22 +106,44 @@ import Container from "./ui/Container.astro";
     </div>
 
     <!-- About GSFC University -->
-    <h2 class="text-center text-2xl font-bold md:text-4xl mb-8 text-[#06202B]">About GSFC University</h2>
-    <div class="flex flex-col md:flex-row gap-8 mb-8">
-      <p class="w-full md:w-3/5 text-justify text-[#077A7D] text-base md:text-lg leading-relaxed">
-        GSFC University, recognized under the Gujarat Private University Act 2014, is backed by the
-        legacy of Gujarat State Fertilizers and Chemicals Ltd. The university nurtures knowledge with
-        strong industrial collaboration, hands-on training, and a commitment to sustainable innovation.
-        Rooted in the philosophy of "Buddhi Gyanen Shudhayanti", it fosters holistic growth through
-        intellect and compassion.
-      </p>
-      <iframe
-        class="w-full md:w-2/5 aspect-video rounded-lg"
-        src="https://www.youtube.com/embed/00RpFOKLdpk?si=0o4fHrbRqu7Tiof6"
-        title="GSFC University Intro"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </Container>
+  <h2 class="text-center text-2xl font-bold md:text-4xl mb-8 text-[#06202B]">About GSFC University</h2>
+<div class="flex flex-col md:flex-row gap-8 mb-8 items-center justify-center">
+  <!-- Text Block -->
+  <p id="gsfc-text" class="w-full md:w-2/5 text-justify text-[#077A7D] text-base md:text-lg leading-relaxed">
+    GSFC University, recognized under the Gujarat Private University Act 2014, is backed by the
+    legacy of Gujarat State Fertilizers and Chemicals Ltd. The university nurtures knowledge with
+    strong industrial collaboration, hands-on training, and a commitment to sustainable innovation.
+    Rooted in the philosophy of "Buddhi Gyanen Shudhayanti", it fosters holistic growth through
+    intellect and compassion.
+  </p>
+
+  <!-- Video Block -->
+  <iframe
+    id="gsfc-video"
+    class="w-full md:w-2/6 aspect-video rounded-lg"
+    src="https://www.youtube.com/embed/00RpFOKLdpk?si=0o4fHrbRqu7Tiof6"
+    title="GSFC University Intro"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
 </div>
+
+<script>
+  function matchTextHeightToVideo() {
+    const textBlock = document.getElementById("gsfc-text");
+    const videoBlock = document.getElementById("gsfc-video");
+
+    if (!textBlock || !videoBlock) return;
+
+    if (window.innerWidth >= 768) {
+      // Match height on desktop
+      textBlock.style.height = videoBlock.offsetHeight + "px";
+    } else {
+      // Reset on mobile
+      textBlock.style.height = "auto";
+    }
+  }
+
+  window.addEventListener("load", matchTextHeightToVideo);
+  window.addEventListener("resize", matchTextHeightToVideo);
+</script>
