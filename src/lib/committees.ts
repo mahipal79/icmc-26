@@ -44,10 +44,6 @@ export const ADVISORY_COMMITTEE: Array<Member> = [
         position: "Director (Administration), GSFC University, Vadodara",
     },
     {
-        name: "Dr. Nishith Parikh",
-        position: "Associate Dean - Academic Affairs, GSFC University, Vadodara",
-    },
-    {
         name: "Dr. K. Santhosh Kumar",
         position: "Dean, Student Activities and Alumni Interaction Cell (DOST-AI), GSFC University, Vadodara",
     },
