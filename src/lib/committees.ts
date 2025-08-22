@@ -258,10 +258,7 @@ export const EDITORIAL_TEAM: Array<Member> = [
 ];
 
 export const WEB_COMMITTEE: Array<Member> = [
-     {
-        name: "Mr. Saurabh Solanki",
-        position: "Senior Manager IT",
-    },
+    
     {
         name: "Mr. Vishal Harith",
         position: "GSFC University, Vadodara, India",
