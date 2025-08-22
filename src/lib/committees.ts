@@ -49,7 +49,11 @@ export const ADVISORY_COMMITTEE: Array<Member> = [
     },
     {
         name: "Dr. Ranjita Banerjee",
-        position: "Dean, School of Manegement and Liberal Arts(SOM& LA),GSFC University, Vadodara",
+        position: "Dean, School of Manegement and Liberal Arts(SOM& LA), GSFC University, Vadodara",
+    },
+      {
+        name: "Dr. Prabal Sengupta",
+        position: "HoD, Life Science, School of Science, GSFC University, Vadodara",
     },
 ];
 
@@ -137,20 +141,20 @@ export const CONVENORS: Array<Member> = [
 export const CO_CONVENORS: Array<Member> = [
     {
         name: "Dr. Jahanvi Bansal",
-        position: "Associate Dean - Research and Development Cell, GSFC University, Vadodara, India",
+        position: " Associate Dean, IQAC & Internationalization, SoM&LA, GSFC University, Vadodara, India",
     },
     {
         name: "Dr. Priya Goel",
-        position: "Assistant Professor, Chemical Science, GSFC University, Vadodara, India",
+        position: "Assistant Professor, Chemical Science, SoS, GSFC University, Vadodara, India",
     },
     {
         name: "Ms. Swati Saxena",
-        position: "Assistant Professor, Computer Science & Engineering, GSFC University, Vadodara, India",
+        position: "Assistant Professor, Computer Science & Engineering, SoT, GSFC University, Vadodara, India",
     },
 ];
 
 export const ORGANIZING_COMMITTEE: Array<Member> = [
-    /*
+    
     {
         name: "Mr. Mahesh Barot",
         position: "Dy. Director - Administration",
@@ -159,55 +163,73 @@ export const ORGANIZING_COMMITTEE: Array<Member> = [
         name: "Mr. Naren Acharya",
         position: "Assistant Director",
     },
+     {
+        name: "Dr Akhilesh Prajapati",
+        position: "Associate Dean R&D",
+    },
     {
         name: "Ms. Neha Pujara",
-        position: "Associate Dean, Student Activities and Alumni Interaction (DOST-AI)"
+        position: "Dy. Registrar (I/C) "
     },
+     {
+        name: "Ms. Pallavi Chawla",
+        position: "Manager Industry Collaboration"
+    },
+     
     {
         name: "Dr. Chandra Has",
-        position: "Assistant Professor",
+        position: "Assistant Professor, SoT",
     },
-    {
-        name: "Dr. Naznin Pathan",
-        position: "Assistant Professor",
-    },
-    {
-        name: "Dr. Sindhura G",
-        position: "Assistant Professor",
-    },
-    {
+     {
         name: "Dr. Shilpa Gamit",
-        position: "Assistant Professor",
-    },
-    {
-        name: "Dr. Jignesh Valand",
-        position: "Assistant Professor",
+        position: "Assistant Professor, SoM& LA"
     },
     {
         name: "Ms. Mosam Patel",
-        position: "Assistant Professor",
-    },
-    {
-        name: "Ms. Archana Magare",
-        position: "Assistant Professor",
-    },
-    {
-        name: "Ms. Zalak Kansagra",
-        position: "Assistant Professor",
+        position: "Sr. Assistant Professor, SoT ",
     },
     {
         name: "Mr. Ishan Rajani",
-        position: "Assistant Professor",
+        position: "Assistant Professor, SoT",
+    },
+    {
+        name: "Mr. Saurabh Solanki",
+        position: "Senior Manager, IT ",
+    },
+    {
+        name: "Dr. Aditya Puranik",
+        position: "Sr. Assistant Professor, SoS",
+    },
+     {
+        name: "Ms. Sachiyanka Srivastava",
+        position: " Manager - Marketing & PR",
     },
     {
         name: "Ms. Dharti Patel",
         position: "Manager Facility",
     },
     {
-        name: "Ms. Sachiyanka Shrivastava",
-        position: "Dy. Manager - Marketing and PR",
+        name: "Ms. Hetal Jethani",
+        position: "Sr. Assistant Professor, SoT",
     },
-    */
+
+     {
+        name: "Ms. Trusha Chauhan",
+        position: " Technical Assistant, SoT ",
+    },
+      {
+        name: "Dr. Sejal A Rathore",
+        position: " Assistant Professor- SoS ",
+    },
+     {
+        name: "Ms. Shimi Biju",
+        position: "Assistant Professor- SoS ",
+    },
+      {
+        name: "Ms. Shrutika Thakkar",
+        position: "Assistant Professor, SoM& LA",
+    },
+    
 ];
 
 export const EDITORIAL_TEAM: Array<Member> = [
