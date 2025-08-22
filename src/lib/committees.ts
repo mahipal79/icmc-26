@@ -149,7 +149,7 @@ export const CO_CONVENORS: Array<Member> = [
     },
     {
         name: "Ms. Swati Saxena",
-        position: "Assistant Professor, Computer Science & Engineering, SoT, GSFC University, Vadodara, India",
+        position: "Sr. Assistant Professor, Computer Science & Engineering, SoT, GSFC University, Vadodara, India",
     },
 ];
 
