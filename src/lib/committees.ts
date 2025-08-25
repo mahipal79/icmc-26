@@ -39,10 +39,7 @@ export const ADVISORY_COMMITTEE: Array<Member> = [
         name: "Mr. Saurabh Tiwari",
         position: "Senior Principal Engineer , Intel Coorporation, India",
     },
-    {
-        name: "Mr. Ramesh B. Panchal",
-        position: "Director (Administration), GSFC University, Vadodara",
-    },
+
     {
         name: "Dr. K. Santhosh Kumar",
         position: "Dean, Student Activities and Alumni Interaction Cell (DOST-AI), GSFC University, Vadodara",
@@ -192,6 +189,10 @@ export const ORGANIZING_COMMITTEE: Array<Member> = [
         name: "Dr. Shilpa Gamit",
         position: "Assistant Professor, SoM& LA"
     },
+     {
+        name: "Ms. Archna Magare",
+        position: "Sr. Assistant Professor, SoT",
+    },
     {
         name: "Ms. Mosam Patel",
         position: "Sr. Assistant Professor, SoT ",
@@ -200,6 +201,7 @@ export const ORGANIZING_COMMITTEE: Array<Member> = [
         name: "Mr. Ishan Rajani",
         position: "Assistant Professor, SoT",
     },
+   
     {
         name: "Mr. Saurabh Solanki",
         position: "Senior Manager, IT ",
