@@ -122,6 +122,14 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
         name: "Ms. Shalmali Patil",
         position: "Business Intelligence Engineer at Amazon, USA"
     },
+     {
+        name: "Dr.  Silvia Liberata Ullo",
+        position: "Researcher, Université degli Studi del Sannio di Benevento, Italy",
+    },
+     {
+        name: "Prof. C P Fan",
+        position: "National Chung Hsing University, Taiwan",
+    }
 ];
 
 export const CONFERENCE_CHAIR: Array<Member> = [
