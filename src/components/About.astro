@@ -66,7 +66,7 @@ import Container from "./ui/Container.astro";
   });
 </script>
 
-<div id="about" class="py-10 bg-white scroll-mt-10">
+<div id="about" class=" bg-white scroll-mt-10">
   <Container>
     <!-- About the Conference -->
     <h2 class="text-center text-2xl font-bold md:text-4xl mb-8 text-[#06202B]">
@@ -79,15 +79,13 @@ import Container from "./ui/Container.astro";
         <br /><br />
         ICMC-2026 will provide a vibrant platform for sharing breakthroughs, engaging in insightful discussions, and shaping the future of intelligent systems across sectors such as healthcare, environmental sustainability, predictive analytics, and decision support. <br /><br />
         The proceedings of the conference will be submitted for publication in the <strong>Communications in Computer and Information Science (CCIS)</strong> series of <strong>Springer</strong> [SCOPUS Indexed].
-        <br><br>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+        <br><br>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
       </p>
     </div><br>
 
     <!-- WHEN & WHERE (Minimal Version) -->
-    
     <div class="flex flex-col md:flex-row gap-8 mb-16 text-[#077A7D ]">
-
-    <div class="info-block">
+      <div class="info-block">
         <h3 class="text-xl font-bold text-black mb-2">WHERE</h3>
         <p class="text-base">
         The conference will be hosted in offline mode
@@ -103,48 +101,27 @@ import Container from "./ui/Container.astro";
           <strong>February 19–20, 2026</strong>
         </p>
       </div>
-      
     </div>
 
     <!-- About GSFC University -->
-  <h2 class="text-center text-2xl font-bold md:text-4xl mb-8 text-[#06202B]">About GSFC University</h2>
-<div class="flex flex-col md:flex-row gap-8 mb-8 items-center justify-center">
-  <!-- Text Block -->
-  <p id="gsfc-text" class="w-full md:w-2/5 text-justify text-[#077A7D] text-base md:text-lg leading-relaxed">
-    GSFC University, recognized under the Gujarat Private University Act 2014, is backed by the
-    legacy of Gujarat State Fertilizers and Chemicals Ltd. The university nurtures knowledge with
-    strong industrial collaboration, hands-on training, and a commitment to sustainable innovation.
-    Rooted in the philosophy of "Buddhi Gyanen Shudhayanti", it fosters holistic growth through
-    intellect and compassion.
-  </p>
+    <h2 class="text-center text-2xl font-bold md:text-4xl mb-8 text-[#06202B]">About GSFC University</h2>
+    <div class="flex flex-col md:flex-row gap-8 mb-8 items-start md:items-stretch justify-center">
+      <!-- Text Block -->
+      <p id="gsfc-text" class="w-full md:w-2/5 text-justify text-[#077A7D] text-base md:text-lg leading-relaxed">
+        GSFC University is recognized under the Gujarat Private University (Second Amendment) Act, 2014 and is established by the GSFC Education Society - an initiative of Gujarat State Fertilizers and Chemicals Ltd, six decades old industrial giant, to continue the tradition of serving the community in multiple ways. The vision behind establishing this distinct University is societal development through relevant and cutting edge knowledge in frontier areas of professional growth.
 
-  <!-- Video Block -->
-  <iframe
-    id="gsfc-video"
-    class="w-full md:w-2/6 aspect-video rounded-lg"
-    src="https://www.youtube.com/embed/00RpFOKLdpk?si=0o4fHrbRqu7Tiof6"
-    title="GSFC University Intro"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
+        Our educational abode dwells on the philosophy of "Buddhi Gyanen Shudhayanti”. It means purification of mind and intellect through knowledge, which is vital to human life. It strengthens the path of success towards perfection. All the while being compassionate towards mankind and society at large. A huge banyan tree is a part of our logo. It symbolizes multiple roots of innovation that sprout towards sustainable growth. The rising Sun in the background of banyan tree in the logo, symbolizes plethora of opportunities for accomplishment in life.
+      </p>
+
+      <!-- Video Block -->
+      <iframe
+        id="gsfc-video"
+        class="w-full md:w-3/6 aspect-video rounded-lg"
+        src="https://www.youtube.com/embed/00RpFOKLdpk?si=0o4fHrbRqu7Tiof6"
+        title="GSFC University Intro"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </Container>
 </div>
-
-<script>
-  function matchTextHeightToVideo() {
-    const textBlock = document.getElementById("gsfc-text");
-    const videoBlock = document.getElementById("gsfc-video");
-
-    if (!textBlock || !videoBlock) return;
-
-    if (window.innerWidth >= 768) {
-      // Match height on desktop
-      textBlock.style.height = videoBlock.offsetHeight + "px";
-    } else {
-      // Reset on mobile
-      textBlock.style.height = "auto";
-    }
-  }
-
-  window.addEventListener("load", matchTextHeightToVideo);
-  window.addEventListener("resize", matchTextHeightToVideo);
-</script>

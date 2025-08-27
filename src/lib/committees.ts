@@ -5,8 +5,9 @@ export type Member = {
 
 export const CHIEF_PATRON: Array<Member> = [
     {
-        name: "Shri P. K Taneja (IAS Retd.)",
-        position: "President, GSFC University, Vadodara, India",
+        // name: "Shri P. K Taneja (IAS Retd.)",
+        name:"President, GSFC University, Vadodara, India"
+        //position: "President, GSFC University, Vadodara, India",
     },
 ];
 
@@ -52,10 +53,14 @@ export const ADVISORY_COMMITTEE: Array<Member> = [
         name: "Dr. Prabal Sengupta",
         position: "HoD, Life Science, School of Science, GSFC University, Vadodara",
     },
+    {
+        name: "Dr Akhilesh Prajapati",
+        position: "Associate Dean R&D",
+    },
 ];
 
 export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
-    {
+   {
         name: "Prof. Fan Zhipeng",
         position: "Research Scientist, Meta GenAI, USA"
     },
@@ -64,16 +69,12 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
         position: "Middlesex University, London, UK"
     },
     {
+        name: "Prof. C P Fan",
+        position: "National Chung Hsing University, Taiwan",
+    },
+    {
         name: "Prof. Amitabh Mishra",
         position: "Associate Professor, University of West Florida, USA"
-    },
-    {
-        name: "Dr. Amelia Taylor",
-        position: "Malawi University, Zomba"
-    },
-    {
-        name: "Dr. Siuly Siuly",
-        position: "Research Fellow, Victoria University, Australia"
     },
     {
         name: "Prof. Somitra Kumar Sanadhya",
@@ -92,6 +93,18 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
         position: "IIIT Bangalore, India"
     },
     {
+        name: "Dr. Amelia Taylor",
+        position: "Malawi University, Zomba"
+    },
+    {
+        name: "Dr. Siuly Siuly",
+        position: "Research Fellow, Victoria University, Australia"
+    },
+    {
+        name: "Dr.  Silvia Liberata Ullo",
+        position: "Researcher, Université degli Studi del Sannio di Benevento, Italy",
+    },    
+    {
         name: "Mr. Herat Joshi",
         position: "Lead - Analytics & Decision Support, Great River Health System, USA"
     },
@@ -108,10 +121,6 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
         position: "Firmware Engineer, XII Medical, California, USA"
     },
     {
-        name: "Prof. Maulika Patel",
-        position: "Head, GCET, VV Vidhyanagar, Gujarat, India"
-    },
-    {
         name: "Mr. Mahesh Yadav,",
         position: "Product Manager and Developer, Google Gen AI, USA"
     },
@@ -119,20 +128,16 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
         name: "Ms. Shalmali Patil",
         position: "Business Intelligence Engineer at Amazon, USA"
     },
-     {
-        name: "Dr.  Silvia Liberata Ullo",
-        position: "Researcher, Université degli Studi del Sannio di Benevento, Italy",
+    {
+        name: "Prof. Maulika Patel",
+        position: "Head, GCET, VV Vidhyanagar, Gujarat, India"
     },
-     {
-        name: "Prof. C P Fan",
-        position: "National Chung Hsing University, Taiwan",
-    }
 ];
 
 export const CONFERENCE_CHAIR: Array<Member> = [
     {
         name: "Prof. G. R Sinha ",
-        position: "Provost, GSFC University, Vadodara, India",
+        position: "Provost (Vice Chancellor), GSFC University, Vadodara, India",
     },
 ];
 
@@ -168,10 +173,7 @@ export const ORGANIZING_COMMITTEE: Array<Member> = [
         name: "Mr. Naren Acharya",
         position: "Assistant Director",
     },
-     {
-        name: "Dr Akhilesh Prajapati",
-        position: "Associate Dean R&D",
-    },
+     
     {
         name: "Ms. Neha Pujara",
         position: "Dy. Registrar (I/C) "
