@@ -54,7 +54,7 @@ export const ADVISORY_COMMITTEE: Array<Member> = [
         position: "HoD, Life Science, School of Science, GSFC University, Vadodara",
     },
     {
-        name: "Dr Akhilesh Prajapati",
+        name: "Dr. Akhilesh Prajapati",
         position: "Associate Dean R&D",
     },
 ];
