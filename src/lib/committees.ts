@@ -78,7 +78,7 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
     },
     {
         name: "Prof. Somitra Kumar Sanadhya",
-        position: "IIT Jodhpur, India"
+        position: "IIT Kanpur, India"
     },
     {
         name: "Prof. K. S. Kasiviswanathan",
@@ -108,14 +108,14 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
         name: "Mr. Herat Joshi",
         position: "Lead - Analytics & Decision Support, Great River Health System, USA"
     },
-    {
-        name: "Mr. Nitesh Upadhyaya",
-        position: "Solution Architect, GlobalLogic Inc, California, USA"
-    },
-    {
-        name: "Mr. Shenson Joseph",
-        position: "Vice President Data Engineering, JPMorgan Chase & Co., Texas, USA",
-    },
+    // {
+    //     name: "Mr. Nitesh Upadhyaya",
+    //     position: "Solution Architect, GlobalLogic Inc, California, USA"
+    // },
+    // {
+    //     name: "Mr. Shenson Joseph",
+    //     position: "Vice President Data Engineering, JPMorgan Chase & Co., Texas, USA",
+    // },
     {
         name: "Mr. Anuj Kumar Sareen",
         position: "Firmware Engineer, XII Medical, California, USA"
@@ -130,7 +130,7 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
     },
     {
         name: "Prof. Maulika Patel",
-        position: "Head, GCET, VV Vidhyanagar, Gujarat, India"
+        position: "Principal, GCET, VV Vidhyanagar, Gujarat, India"
     },
 ];
 
