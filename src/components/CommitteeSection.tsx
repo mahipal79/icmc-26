@@ -5,7 +5,6 @@ import {
   CO_CONVENORS,
   CONFERENCE_CHAIR,
   CONVENORS,
-  EDITORIAL_TEAM,
   ORGANIZING_COMMITTEE,
   TECHNICAL_PROGRAM_COMMITTEE,
   WEB_COMMITTEE,
@@ -59,12 +58,12 @@ const CommitteeSection = () => {
   >
     <TabTitle title="Organizing Committee" />
   </TabsTrigger>
-  <TabsTrigger
+  {/* <TabsTrigger
     value="editorial-team"
     className="bg-[#E7F7F7] text-[#06202B] hover:bg-[#d3f0f0] data-[state=active]:bg-[#06202B] data-[state=active]:text-white rounded px-3 py-2"
   >
     <TabTitle title="Editorial Team" />
-  </TabsTrigger>
+  </TabsTrigger> */}
   <TabsTrigger
     value="web-committee"
     className="bg-[#E7F7F7] text-[#06202B] hover:bg-[#d3f0f0] data-[state=active]:bg-[#06202B] data-[state=active]:text-white rounded px-3 py-2"
@@ -103,10 +102,10 @@ const CommitteeSection = () => {
               (All the above are from GSFC University, Vadodara)
             </p>
           </TabsContent>
-          <TabsContent value="editorial-team">
+          {/* <TabsContent value="editorial-team">
             <CommitteeTitle title="Editorial Team" />
             <CommitteeList members={EDITORIAL_TEAM} />
-          </TabsContent>
+          </TabsContent> */}
           <TabsContent value="web-committee">
             <CommitteeTitle title="Web Committee" />
             <CommitteeList members={WEB_COMMITTEE} />

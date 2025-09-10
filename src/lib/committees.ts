@@ -191,8 +191,20 @@ export const ORGANIZING_COMMITTEE: Array<Member> = [
         name: "Dr. Shilpa Gamit",
         position: "Assistant Professor, SoM& LA"
     },
+    {
+        name: "Dr. Aditya Puranik",
+        position: "Sr. Assistant Professor, SoS",
+    },
+     {
+        name: "Dr. Sejal A Rathore",
+        position: " Assistant Professor- SoS ",
+    },
      {
         name: "Ms. Archna Magare",
+        position: "Sr. Assistant Professor, SoT",
+    },
+     {
+        name: "Ms. Hetal Jethani",
         position: "Sr. Assistant Professor, SoT",
     },
     {
@@ -203,37 +215,7 @@ export const ORGANIZING_COMMITTEE: Array<Member> = [
         name: "Mr. Ishan Rajani",
         position: "Assistant Professor, SoT",
     },
-   
     {
-        name: "Mr. Saurabh Solanki",
-        position: "Senior Manager, IT ",
-    },
-    {
-        name: "Dr. Aditya Puranik",
-        position: "Sr. Assistant Professor, SoS",
-    },
-     {
-        name: "Ms. Sachiyanka Srivastava",
-        position: " Manager - Marketing & PR",
-    },
-    {
-        name: "Ms. Dharti Patel",
-        position: "Manager Facility",
-    },
-    {
-        name: "Ms. Hetal Jethani",
-        position: "Sr. Assistant Professor, SoT",
-    },
-
-     {
-        name: "Ms. Trusha Chauhan",
-        position: " Technical Assistant, SoT ",
-    },
-      {
-        name: "Dr. Sejal A Rathore",
-        position: " Assistant Professor- SoS ",
-    },
-     {
         name: "Ms. Shimi Biju",
         position: "Assistant Professor- SoS ",
     },
@@ -241,10 +223,30 @@ export const ORGANIZING_COMMITTEE: Array<Member> = [
         name: "Ms. Shrutika Thakkar",
         position: "Assistant Professor, SoM& LA",
     },
+   
+    {
+        name: "Mr. Saurabh Solanki",
+        position: "Senior Manager, IT ",
+    },
+    
+     {
+        name: "Ms. Trusha Chauhan",
+        position: " Technical Assistant, SoT ",
+    },
+     
+     
+    {
+        name: "Ms. Sachiyanka Srivastava",
+        position: " Manager - Marketing & PR",
+    },
+    {
+        name: "Ms. Dharti Patel",
+        position: "Manager Facility",
+    },
     
 ];
 
-export const EDITORIAL_TEAM: Array<Member> = [
+/*export const EDITORIAL_TEAM: Array<Member> = [
     /*
     {
         name: "Prof. G. R Sinha",
@@ -265,9 +267,10 @@ export const EDITORIAL_TEAM: Array<Member> = [
     {
         name: "Prof. C P Fan",
         position: "National Chung Hsing University, Taiwan",
-    }
-    */
-];
+    }*/
+   
+
+
 
 export const WEB_COMMITTEE: Array<Member> = [
     
