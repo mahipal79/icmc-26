@@ -5,9 +5,9 @@ export type Member = {
 
 export const CHIEF_PATRON: Array<Member> = [
     {
-        // name: "Shri P. K Taneja (IAS Retd.)",
-        name:"President, GSFC University, Vadodara, India"
-        //position: "President, GSFC University, Vadodara, India",
+        name: "Shri P. K Taneja (IAS Retd.)",
+        //name:"President, GSFC University, Vadodara, India"
+        position: "President, GSFC University, Vadodara, India",
     },
 ];
 
@@ -88,10 +88,10 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
         name: "Prof. Sarat Kumar Patra",
         position: "Director, NIT Agartala, India"
     },
-    {
-        name: "Prof. Srinath Srinivasa",
-        position: "IIIT Bangalore, India"
-    },
+    // {
+    //     name: "Prof. Srinath Srinivasa",
+    //     position: "IIIT Bangalore, India"
+    // },
     {
         name: "Dr. Amelia Taylor",
         position: "Malawi University, Zomba"
