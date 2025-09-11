@@ -12,6 +12,7 @@ export const CHIEF_PATRON: Array<Member> = [
 ];
 
 export const ADVISORY_COMMITTEE: Array<Member> = [
+    
     {
         name: "Prof. Karuna Jain",
         position: "Professor, IIT Bombay",
@@ -23,6 +24,10 @@ export const ADVISORY_COMMITTEE: Array<Member> = [
     {
         name: "Prof. Meenakshi D'Souza",
         position: "Professor, IIIT Bangalore",
+    },
+     {
+        name: "Eugenio Cesario",
+        position: "University of Calabria,Italy",
     },
     {
         name: "Dr. Bhavesh N Gohil",
@@ -40,6 +45,11 @@ export const ADVISORY_COMMITTEE: Array<Member> = [
         name: "Mr. Saurabh Tiwari",
         position: "Senior Principal Engineer , Intel Coorporation, India",
     },
+     {
+        name: "Dr. Sandeep Saini",
+        position: "Dean of Academic Affairs , The LNM Institute of Information Technology, Jaipur",
+    },
+
 
     {
         name: "Dr. K. Santhosh Kumar",
