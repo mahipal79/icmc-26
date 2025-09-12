@@ -12,27 +12,34 @@ export const CHIEF_PATRON: Array<Member> = [
 ];
 
 export const ADVISORY_COMMITTEE: Array<Member> = [
+      {
+        name: "Prof. Eugenio Cesario",
+        position: "University of Calabria,Italy",
+    },
+     {
+        name: "Prof. Ts Dr Humaira Nisar",
+        position: "Professor, Universiti Tunku Abdul Rahman, Malaysia",
+    },
     
     {
         name: "Prof. Karuna Jain",
         position: "Professor, IIT Bombay",
     },
-    {
-        name: "Prof Ts Dr Humaira Nisar",
-        position: "Professor, Universiti Tunku Abdul Rahman, Malaysia",
-    },
+   
     {
         name: "Prof. Meenakshi D'Souza",
         position: "Professor, IIIT Bangalore",
     },
-     {
-        name: "Eugenio Cesario",
-        position: "University of Calabria,Italy",
-    },
+   
     {
         name: "Dr. Bhavesh N Gohil",
         position: "Associate Professor, SVNIT, Surat",
     },
+     {
+        name: "Dr. Sandeep Saini",
+        position: "Dean of Academic Affairs , The LNM Institute of Information Technology, Jaipur",
+    },
+
     {
         name: "Dr. Aloknath De",
         position: "Founder & CEO - TechCrafter.cps, Adjunct Prof - IISc, CTO & CVP (Retd.) - Samsung",
@@ -45,11 +52,7 @@ export const ADVISORY_COMMITTEE: Array<Member> = [
         name: "Mr. Saurabh Tiwari",
         position: "Senior Principal Engineer , Intel Coorporation, India",
     },
-     {
-        name: "Dr. Sandeep Saini",
-        position: "Dean of Academic Affairs , The LNM Institute of Information Technology, Jaipur",
-    },
-
+    
 
     {
         name: "Dr. K. Santhosh Kumar",
@@ -140,7 +143,7 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
     },
     {
         name: "Prof. Maulika Patel",
-        position: "Principal, GCET, VV Vidhyanagar, Gujarat, India"
+        position: "Principal, MBIT-CVM University, Anand, Gujarat, India"
     },
 ];
 
