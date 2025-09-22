@@ -4,37 +4,40 @@ import Container from "./ui/Container.astro";
 
 <section id="speakers" class="scroll-mt-24 relative z-10">
   <Container>
-    <h1 class="text-center text-2xl font-bold text-[#06202B] md:text-4xl mb-8">
-      Keynote Speakers
-    </h1>
+   <h1 class="text-center text-2xl font-bold text-[#06202B] md:text-4xl mb-8">
+  Keynote Speakers
+</h1>
 
-    <div class="flex flex-wrap justify-center gap-6">
-      <div class="bg-background border border-[#06202B] rounded-lg shadow-lg max-w-xs">
-        <div class="p-6 space-y-4 flex flex-col items-center">
-          <img class="rounded-md w-24 h-24 object-contain" src="/images/Human-icon.png" />
-          <div class="text-center">
-            <h3 class="text-lg font-semibold text-[#06202B]">International Speaker</h3>
-            <p class="font-semibold text-[#077A7D]">[Confirmation Awaited]</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-background border border-[#06202B] rounded-lg shadow-lg max-w-xs">
-        <div class="p-6 space-y-4 flex flex-col items-center">
-          <img class="rounded-md w-24 h-24 object-cover object-top" src="/images/Human-icon.png" />
-          <div class="text-center">
-            <h3 class="text-lg font-semibold text-[#06202B]">National Speaker</h3>
-            <p class="font-semibold text-[#077A7D]">[Confirmation Awaited]</p>
-          </div>
-        </div>
+<div class="flex flex-wrap justify-center gap-6">
+  <!-- International Speaker -->
+  <div class="bg-background border border-[#06202B]/50 rounded-lg shadow-lg max-w-xs">
+    <div class="p-6 space-y-4 flex flex-col items-center">
+      <img class="rounded-md w-32 h-32 object-cover object-center" src="/images/Speaker-1.jpeg" />
+      <div class="text-center">
+        <h3 class="text-lg font-semibold text-[#06202B]">Dr.Eugenio Cesario</h3>
+        <p class="font-semibold text-[#077A7D]">ACM Distinguished Speaker University of Calabria (Italy)</p>
       </div>
     </div>
+  </div>
 
-    <h1 class="text-center text-2xl font-bold text-[#06202B] md:text-4xl mt-16 mb-8">
+  <!-- National Speaker -->
+  <div class="bg-background border border-[#06202B]/50 rounded-lg shadow-lg max-w-xs">
+    <div class="p-6 space-y-4 flex flex-col items-center">
+      <img class="rounded-md w-32 h-32 object-cover object-center" src="/images/Speaker-2.jpg" />
+      <div class="text-center">
+        <h3 class="text-lg font-semibold text-[#06202B]">Ms.Suranjeeta Choudhury</h3>
+        <p class="font-semibold text-[#077A7D]">Director of Product Marketing, Industrial & Embedded IoT, Qualcomm (USA)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- <h1 class="text-center text-2xl font-bold text-[#06202B] md:text-4xl mt-16 mb-8">
       Invited Talks
-    </h1>
+    </h1> -->
 
-    <div class="flex flex-wrap justify-center gap-6">
+    <!-- <div class="flex flex-wrap justify-center gap-6">
       <div class="bg-background border border-[#06202B] rounded-lg shadow-lg max-w-xs">
         <div class="p-6 space-y-4 flex flex-col items-center">
           <img class="rounded-md w-24 h-24 object-contain" src="/images/Human-icon.png" />
@@ -54,7 +57,7 @@ import Container from "./ui/Container.astro";
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="text-center mt-12">
       <button
