@@ -93,14 +93,14 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
         name: "Prof. Somitra Kumar Sanadhya",
         position: "IIT Kanpur, India"
     },
-    {
-        name: "Prof. K. S. Kasiviswanathan",
-        position: "Associate Professor, IIT Roorkee, India"
-    },
-    {
-        name: "Prof. Sarat Kumar Patra",
-        position: "Director, NIT Agartala, India"
-    },
+    // {
+    //     name: "Prof. K. S. Kasiviswanathan",
+    //     position: "Associate Professor, IIT Roorkee, India"
+    // },
+    // {
+    //     name: "Prof. Sarat Kumar Patra",
+    //     position: "Director, NIT Agartala, India"
+    // },
     // {
     //     name: "Prof. Srinath Srinivasa",
     //     position: "IIIT Bangalore, India"
@@ -113,10 +113,24 @@ export const TECHNICAL_PROGRAM_COMMITTEE: Array<Member> = [
         name: "Dr. Siuly Siuly",
         position: "Research Fellow, Victoria University, Australia"
     },
-    {
+      {
         name: "Dr.  Silvia Liberata Ullo",
         position: "Researcher, Université degli Studi del Sannio di Benevento, Italy",
-    },    
+    },
+
+    {
+        name: "Dr. Chirag Modi",
+        position: "NIT Goa",
+    },
+     {
+        name: "Dr. Deepak Nayak",
+        position: "NIT Jaipur",
+    },
+     {
+        name: "Dr. U. P. Rao",
+        position: "NIT Patna",
+    },
+   
     {
         name: "Mr. Herat Joshi",
         position: "Lead - Analytics & Decision Support, Great River Health System, USA"
